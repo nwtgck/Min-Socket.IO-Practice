@@ -1,18 +1,16 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title></title>
-	<link rel="stylesheet" type="text/css" href=""  />
+	<title>Min Socket.IO Practice</title>
 	<script src="/socket.io/socket.io.js"></script>
 <script>
-  var socket = io();
-  socket.on('message_from_server', function (message){
-  	console.log(message);
+	var socket = io();
+	socket.on('message_from_server', function (message){
+		console.log(message);
 
-  	socket.emit('message_from_client', "This is JavaScript");
-  });
-
+		socket.emit('message_from_client', "This is JavaScript");
+	});
 </script>
 </head>
 <body>
